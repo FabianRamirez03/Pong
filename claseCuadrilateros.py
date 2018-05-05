@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 import pygame
 import time
 import random
@@ -25,9 +24,3 @@ Paleta1Dual_player1 = Cuadrilateros(150,25,0,0,50,250)
 Paleta2Dual_player1 = Cuadrilateros(150,25,0,0,50,350)
 Paleta1Dual_player2 = Cuadrilateros(150,25,0,0,1000,250)
 Paleta2Dual_player2 = Cuadrilateros(150,25,0,0,1000,350)
-=======
-print("Hola")
-#Comentario
-print (2*2)
- 
->>>>>>> d1bd3a6c5e8e80ffc75fcdea14f93ce1b3b6137c
