@@ -14,6 +14,23 @@ class Cuadrilateros:
         self.posicion_y = posicion_y
 
 
+    def getLargo(self):
+        return self.largo
+    def getAncho(self):
+        return self.ancho
+    def getMovX(self):
+        return self.movimiento_x
+    def getMovY(self):
+        return self.movimiento_y
+    def getPosX(self):
+        return self.posicion_x
+    def getPosY(self):
+        return self.posicion_y
+
+
+
+
+
 
 Bola = Cuadrilateros(20,20,0,0,200,200)
 Borde_Superior = Cuadrilateros(20,1000,0,0,10,10)
