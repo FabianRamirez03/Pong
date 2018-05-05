@@ -1,0 +1,2 @@
+Día 1: 4/05/18. 3h.
+Montamos el proyecto en GitHub  e investigamos sobre la aplicación. Dejamos las clases definidas.
