@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 #<<<<<<< HEAD
 print("Hola")
 #Comentario
@@ -43,9 +42,6 @@ class Juego:
 #=======
 import pygame, sys
 from pygame.locals import *
-=======
-import pygame
->>>>>>> 22497c137d8dad33054686e491d4e3b5e5afecd8
 import time
 import random
 
@@ -60,22 +56,7 @@ class Cuadrilateros:
         self.posicion_x = posicion_x
         self.posicion_y = posicion_y
 
-<<<<<<< HEAD
 
-=======
-    def getLargo(self):
-        return self.largo
-    def getAncho(self):
-        return self.ancho
-    def getMovX(self):
-        return self.movimiento_x
-    def getMovY(self):
-        return self.movimiento_y
-    def getPosX(self):
-        return self.posicion_x
-    def getPosY(self):
-        return self.posicion_y
->>>>>>> 22497c137d8dad33054686e491d4e3b5e5afecd8
 
 Bola = Cuadrilateros(20,20,0,0,200,200)
 Borde_Superior = Cuadrilateros(20,1000,0,0,10,10)
@@ -86,7 +67,6 @@ Paleta1Dual_player1 = Cuadrilateros(150,25,0,0,50,250)
 Paleta2Dual_player1 = Cuadrilateros(150,25,0,0,50,350)
 Paleta1Dual_player2 = Cuadrilateros(150,25,0,0,1000,250)
 Paleta2Dual_player2 = Cuadrilateros(150,25,0,0,1000,350)
-<<<<<<< HEAD
 #>>>>>>> d74292591db05aeb73d798bc817e65db4b406982
 
 pygame.init()
@@ -101,6 +81,7 @@ pygame.draw.rect(pantalla, white, (585, 0, 30, 30))
 
 
 
+
 running = True
 while running:
 	for event in pygame.event.get():
@@ -111,6 +92,19 @@ while running:
 			if event.key == pygame.K_SPACE:
 				break
 			py.display.flip()
-=======
 
->>>>>>> 22497c137d8dad33054686e491d4e3b5e5afecd8
+def crash():
+	if ancho_bola + ancho_paleta + espacio_paleta_pantalla <= posicion_x_bola:
+		if posicion_y_bola + ancho_bola <= posicion_y_paleta + largo_paleta and posicion_y_bola > = posicion_y_paleta:
+			rebote()
+ 
+ def rebote():
+ 	if (posicion_y_bola + ancho_bola) <= (posicion_y_paleta + largo_paleta/3) and (posicion_y_bola) > (posicion_y_paleta - ancho_bola):
+ 		velocidad_y = 3
+ 		velocidad_x += 1
+ 	if (posicion_y_bola + ancho_bola) <= (posicion_y_paleta + (largo_paleta/3)*2) and (posicion_y_bola) > (posicion_y_paleta + largo_paleta/3):
+ 		velocidad_y = por definir
+ 		velocidad_x += 1
+	if (posicion_y_bola) <= (posicion_y_paleta + largo_paleta) and (posicion_y_bola) > (posicion_y_paleta + 2*(largo_paleta)):
+		velocidad_y = -3
+		velocidad_x += 1
